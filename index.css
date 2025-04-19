@@ -1,0 +1,327 @@
+/* 
+font-family: "Sora", sans-serif;
+font-family: "Roboto Mono", monospace;
+font-family: "Roboto Flex", sans-serif;
+*/
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/Linha.png);
+    background-color: #020202;
+}
+.title{
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    margin-top: 76px;
+}
+
+.title img{
+    height: 38px;
+    width: 38px;
+}
+
+.title h1 {
+    font-size: 24px;
+    font-family: "Sora", sans-serif;
+    color: white;
+}
+
+.sorteio-numb {
+    display: flex;
+    align-items: center;
+    gap: 108px;
+    width: 1098px;
+    height: 412px;
+    /* background-color: green; */
+    border-radius: 20px;
+    margin-top: 80px;
+}
+
+.sorteio{
+    color: white;
+    /* width: 508px;
+    height: 412px; */
+}
+
+.sorteio h3{
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    color: #C7C9CC 0%, #3D3D3D 100%;
+    
+}
+
+.sorteio h1{
+    font-family: "Sora", sans-serif;
+    font-size: 72px;
+}
+
+.all-descri{
+    margin-top: 38px;
+}
+
+.p-img {
+    color: #C58DE7;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.p-img i{
+    font-size: 20px;
+}
+
+#title{
+    font-size: 20px;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: bold;
+}
+
+#descri{
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.quero{
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.descricao{
+    color: #C7C9CC;
+    font-size: 16px;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.inputs {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.inputs label{
+    color: #C7C9CC;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.inputs input{
+    width: 86px;
+    height: 56px;
+    border: none;
+    border-radius: 8px;
+    background-color: #111012;
+}
+
+
+
+/* Wrapper do switch e texto ao lado */
+.switch-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 1em;
+    font-family: sans-serif;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  /* Texto ao lado do switch */
+  .switch-label {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  /* Estilo do switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+  
+  /* Oculta o checkbox padrão */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Estilo da bolinha deslizante */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #adb5bd;
+    border: 1px solid #adb5bd;
+    transition: 0.4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 0.27em;
+    bottom: 0.25em;
+    background-color: #fff;
+    transition: 0.4s;
+  }
+  
+  /* QUANDO O SWITCH ESTÁ MARCADO */
+  .switch input:checked + .slider {
+    background: linear-gradient(90deg, #D586E0 0%, #91A1FA 100%);
+    border: 1px solid #91A1FA;
+  }
+  
+  .switch input:checked + .slider:before {
+    transform: translateX(1.4em);
+  }
+  
+  /* Foco no switch */
+  .switch input:focus + .slider {
+    box-shadow: 0 0 2px #91A1FA;
+  }
+  
+
+  #sortear {
+    /* padding: 12px 24px; */
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #24222E;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    
+    width: 482px;
+    height: 56px;
+    margin-top: 40px;
+    gap: 8px;
+  }
+  
+  #sortear::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 10px;
+    background: linear-gradient(270deg, #D586E0, #91A1FA, #D586E0);
+    background-size: 400% 400%;
+    z-index: -1;
+    animation: moveGradient 4s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  #sortear:hover::before {
+    opacity: 1;
+  }
+  
+  #sortear::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #24222E;
+    border-radius: 8px;
+    z-index: -1;
+  }
+
+  .numb{
+    /* display: none; */
+  }
+
+.sorteado{
+    color: white;  
+    height: 394px;
+    width: 882px;
+}
+
+.sorteado h1{
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+#numero-do-sorteio{
+    text-align: center;
+    color: #C7C9CC;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+}
+
+.numeros-sorteados{
+   display: flex;
+    /* grid-column: auto; */
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    gap: 10px;
+    justify-content: center;
+}
+
+.quad {
+    width: 84px;
+    height: 90px;
+    background-color: #C58DE7;
+    border-radius: 28px;
+    font-size: 28px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    display: flex;              /* ativa flexbox */
+    justify-content: center;   /* alinha horizontalmente */
+    align-items: center;       /* alinha verticalmente */
+    text-align: center;
+  }
+  
+
+.sortear-novamente{
+    width: 482px;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    font-family: "Roboto Flex", sans-serif;
+    color: white;
+    background-color: #24222E;
+    margin-top: 40px;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sortear-novamente i {
+    /* font-size: 20px; */
+}
+
+
+
+  
