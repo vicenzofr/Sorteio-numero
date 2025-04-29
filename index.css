@@ -216,6 +216,11 @@ input[type=number]::-webkit-outer-spin-button {
   }
   
 
+
+
+
+
+
   #sortear {
     /* padding: 12px 24px; */
     font-size: 20px;
@@ -226,7 +231,6 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    
     width: 482px;
     height: 56px;
     margin-top: 40px;
@@ -273,6 +277,7 @@ input[type=number]::-webkit-outer-spin-button {
     color: white;  
     height: 394px;
     width: 882px;
+    display: none;
 }
 
 .sorteado h1{

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+                                    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,7 +44,7 @@
                 <div class="inputs">
                     <div class="input-group">
                         <label for="numero">NÚMERO</label>
-                        <input type="number" id="numero">
+                        <input type="number" id="numero" min="0" max="100">
                     </div>
                 
                     <div class="input-group">
@@ -70,21 +70,18 @@
                   
                   
             </div>
-
-            <!-- <div class="sorteado">
-                <h1 >RESULTADO DO SORTEIO</h1>
-                <p id="numero-do-sorteio">1º RESULTADO</p>
+            <div class="sorteado">
+                <h1>RESULTADO DO SORTEIO</h1>
+                <p id="numero-do-sorteio">1º RESULTADO</p>
                 <div class="numeros-sorteados">
-                    <div class="quad">
-                        <h2 id="numero1">23</h1>
+                    <!-- Apenas um quadrado de resultado inicialmente -->
+                    <div class="quad" id="numero1">
+                        <h2>23</h2>
                     </div>
-                    <div class="quad">
-                        <h2 id="numero2">12</h2>                    
-                    </div>
-                   
                 </div>
-                <button class="sortear-novamente">SORTEAR NOVAMENTE <i class="ph ph-arrow-clockwise"></i> </button>
-            </div> -->
+                <button class="sortear-novamente" onClick="window.location.reload();">SORTEAR NOVAMENTE <i class="ph ph-arrow-clockwise"></i></button>
+            </div>
+            
         </div>
     </div>
     
